@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:tag="layout"
+    tools:context=".ui.main.ChordFragment">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time to play some chords"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <piano.PianoView
+        android:id="@+id/pianoView"
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        android:layout_marginTop="24dp"
+        android:tag="piano"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/c"
+        android:onClick="playChord"
+        android:tag="C"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pianoView" />
+
+    <Button
+        android:id="@+id/button_d"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/d"
+        android:onClick="playChord"
+        android:tag="D"
+        app:layout_constraintStart_toEndOf="@+id/button_c"
+        app:layout_constraintTop_toBottomOf="@+id/pianoView" />
+
+    <Button
+        android:id="@+id/button_e"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/e"
+        android:onClick="playChord"
+        android:tag="E"
+        app:layout_constraintStart_toEndOf="@+id/button_d"
+        app:layout_constraintTop_toBottomOf="@+id/pianoView" />
+
+    <Button
+        android:id="@+id/button_f"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/f"
+        android:onClick="playChord"
+        android:tag="F"
+        app:layout_constraintStart_toEndOf="@+id/button_e"
+        app:layout_constraintTop_toBottomOf="@+id/pianoView" />
+
+    <Button
+        android:id="@+id/button_g"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/g"
+        android:onClick="playChord"
+        android:tag="G"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_c" />
+
+    <Button
+        android:id="@+id/button_a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/a"
+        android:onClick="playChord"
+        android:tag="A"
+        app:layout_constraintStart_toEndOf="@+id/button_g"
+        app:layout_constraintTop_toBottomOf="@+id/button_d" />
+
+    <Button
+        android:id="@+id/button_h"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/b"
+        android:onClick="playChord"
+        android:tag="B"
+        app:layout_constraintStart_toEndOf="@+id/button_a"
+        app:layout_constraintTop_toBottomOf="@+id/button_e" />
+
+    <Button
+        android:id="@+id/button_cmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="c min"
+        android:onClick="playChord"
+        android:tag="cmin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_g" />
+
+    <Button
+        android:id="@+id/button_dmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="d min"
+        android:onClick="playChord"
+        android:tag="dmin"
+        app:layout_constraintStart_toEndOf="@+id/button_cmin"
+        app:layout_constraintTop_toBottomOf="@+id/button_a" />
+
+    <Button
+        android:id="@+id/button_emin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="e min"
+        android:onClick="playChord"
+        android:tag="emin"
+        app:layout_constraintStart_toEndOf="@+id/button_dmin"
+        app:layout_constraintTop_toBottomOf="@+id/button_h" />
+
+    <Button
+        android:id="@+id/button_fmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="f min"
+        android:onClick="playChord"
+        android:tag="fmin"
+        app:layout_constraintStart_toEndOf="@+id/button_emin"
+        app:layout_constraintTop_toBottomOf="@+id/button_h" />
+
+    <Button
+        android:id="@+id/button_gmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="g min"
+        android:onClick="playChord"
+        android:tag="gmin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_cmin" />
+
+    <Button
+        android:id="@+id/button_amin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="a min"
+        android:onClick="playChord"
+        android:tag="amin"
+        app:layout_constraintStart_toEndOf="@+id/button_gmin"
+        app:layout_constraintTop_toBottomOf="@+id/button_dmin" />
+
+    <Button
+        android:id="@+id/button_bmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="b min"
+        android:onClick="playChord"
+        android:tag="bmin"
+        app:layout_constraintStart_toEndOf="@+id/button_amin"
+        app:layout_constraintTop_toBottomOf="@+id/button_emin" />
+
+    <Button
+        android:id="@+id/button_cdim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="c dim"
+        android:onClick="playChord"
+        android:tag="cdim"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_gmin" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
